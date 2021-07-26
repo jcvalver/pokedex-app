@@ -6,7 +6,7 @@ xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myArr = JSON.parse(this.responseText);
     console.log("data dev:" +myArr);
-    myFunction(myArr.results);
+    myFunction(myArr.results);///cambios nuevos para ver que sucede entodo caso con esto
   }
 };
 xmlhttp.open("GET", url, true);
